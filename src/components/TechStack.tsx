@@ -10,7 +10,7 @@ export default function TechStack() {
 
                 <div className="border-t border-gray-200 mt-6 mb-8"></div>
 
-                <div className="grid grid-cols-1 md:grid-cols-3 border border-gray-200 rounded-md overflow-hidden">
+                <div className="grid grid-cols-1 md:grid-cols-4 border border-gray-200 rounded-md overflow-hidden">
                     {techStack.map((column, index) => (
                         <div
                             key={column.title}

@@ -10,5 +10,9 @@ export const techStack = [
     {
         title: "Tools",
         items: ["Git", "GitLab", "Jira", "BitBucket"]
+    },
+    {
+        title: "Databases",
+        items: ["Oracle"]
     }
 ];
