@@ -1,4 +1,13 @@
-export default function ProjectCard({project}) {
+type Project = {
+    id: number
+    title: string
+    description: string
+    tech: string[]
+    github: string
+    swagger: string
+}
+
+export default function ProjectCard({project}: { project: Project }) {
     return (
         <div className="border border-gray-200 rounded-md p-6">
             <h3 className="text-xl font-semibold tracking-tight text-gray-900">
@@ -12,12 +21,12 @@ export default function ProjectCard({project}) {
                 Tech: {project.tech.join(", ")}
             </p>
             <div className="mt-6 space-y-2">
-                <button href={project.github} className="w-full bg-[#3f6a97] text-white px-4 py-2 rounded-md border border-slate-800 shadow-sm hover:from-slate-700 hover:bg-[#365b83]">
+                <a href={project.github} className="block w-full bg-[#3f6a97] text-white text-center px-4 py-2 rounded-md border border-slate-800 shadow-sm hover:from-slate-700 hover:bg-[#365b83]">
                     View on Github
-                </button>
-                <button href={project.swagger} className="w-full border border-[#3f6a97] text-[#3f6a97] px-4 py-2 rounded-md hover:bg-blue-50">
+                </a>
+                <a href={project.swagger} className="block w-full border border-[#3f6a97] text-[#3f6a97] text-center px-4 py-2 rounded-md hover:bg-blue-50">
                     View on Swagger
-                </button>
+                </a>
             </div>
         </div>
     );
