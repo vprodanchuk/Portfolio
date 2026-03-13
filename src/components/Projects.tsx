@@ -18,7 +18,7 @@ export default function Projects() {
                   More backend projects available on <strong>GitHub</strong>
               </p>
               <div className="flex justify-center">
-                  <a href="#" className="bg-[#3f6a97] text-white px-15 py-2 rounded-md hover:bg-[#365b83]">
+                  <a href="https://github.com/vprodanchuk" target="_blank" className="bg-[#3f6a97] text-white px-15 py-2 rounded-md hover:bg-[#365b83]">
                       View Full GitHub Profile
                   </a>
               </div>
